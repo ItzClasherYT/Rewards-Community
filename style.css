@@ -1,0 +1,111 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .buttons button {
+    margin: 0 10px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #7289da;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #677bc4;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .feature {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #7289da;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature i {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 18px;
+  }
+  
+  .coming-soon {
+    font-size: 24px;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .countdown span {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px;
+    background-color: #7289da;
+    border-radius: 5px;
+    min-width: 40px;
+  }
+  
+  footer {
+    margin-top: 50px;
+  }
+  
+  .credits {
+    font-size: 18px;
+  }
+  

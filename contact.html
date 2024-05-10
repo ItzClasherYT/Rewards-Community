@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact_styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn_more.html">Learn More</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Contact Information</h2>
+        <p>For any inquiries or assistance, please feel free to reach out to us using the following contact details:</p>
+        <ul>
+          <li>Email: itzakashyt69@gmail.com</li>
+          <li>Discord Server: <a href="https://discord.gg/xawqY68d6s">https://discord.gg/xawqY68d6s</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact Form</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      var subject = "Inquiry from " + name;
+
+      var body = "Name: " + name + "%0D%0A";
+      body += "Email: " + email + "%0D%0A";
+      body += "Message: " + message;
+
+      window.location.href = "mailto:itzakashyt69@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
